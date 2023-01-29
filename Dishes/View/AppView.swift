@@ -9,7 +9,30 @@ import SwiftUI
 
 struct AppView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView{
+            DishesView()
+            .tabItem {
+                Image("tabicon-branch")
+                Text("Dishes")
+            }
+            ContentView()
+                .tabItem {
+                    Image("tabicon-book")
+                    Text("Recipes")
+                }
+            ColdingStagesView()
+                .tabItem {
+                    Image("tabicon-dish")
+                    Text("Colding")
+                }
+            SettingsView()
+                .tabItem {
+                    Image("tabicon-settings")
+                    Text("Settings")
+                }
+        }
+        .edgesIgnoringSafeArea(.top)
+        .accentColor(.primary)
     }
 }
 
