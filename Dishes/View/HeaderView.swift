@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     // MARK: - PROPERTIES
+    var header: Header
     @State private var showHeadline: Bool = false
     
     var slideInAnimation: Animation{
@@ -20,7 +21,7 @@ struct HeaderView: View {
     // MARK: - BODY
     var body: some View {
         ZStack{
-            Image("dish-slice-1")
+            Image(header.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
             
@@ -30,13 +31,13 @@ struct HeaderView: View {
                     .frame(width: 4)
                 
                 VStack(alignment: .leading, spacing: 6){
-                    Text("Dishes")
+                    Text(header.headline)
                         .font(.system(.title, design: .serif))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                         .shadow(radius: 3)
                     
-                    Text("Remember that grains are at the heart of many familiar dishes, such as granola, paella, biryani, risotto, salads and soups.")
+                    Text(header.headline)
                         .font(.footnote)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)
@@ -62,7 +63,8 @@ struct HeaderView: View {
 // MARK: - PREVIEW
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView()
+        HeaderView(header: headersData[1])
             .previewLayout(.sizeThatFits)
+            .environment(\.colorScheme, .dark)
     }
 }
