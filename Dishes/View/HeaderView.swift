@@ -37,7 +37,7 @@ struct HeaderView: View {
                         .foregroundColor(.white)
                         .shadow(radius: 3)
                     
-                    Text(header.headline)
+                    Text(header.subheadline)
                         .font(.footnote)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)

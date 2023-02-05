@@ -9,11 +9,12 @@ import SwiftUI
 
 struct FactsView: View {
     // MARK: - PROPERTIES
+    var fact: Fact
     
     // MARK: - BODY
     var body: some View {
         ZStack{
-            Text("Even though the Swedes have some quite strange food to offer, there are some dishes you just have to give a chance. Check out our guide featuring ten of the best below!")
+            Text(fact.content)
                 .padding(.leading, 55)
                 .padding(.trailing, 10)
                 .padding(.vertical, 3)
@@ -25,7 +26,7 @@ struct FactsView: View {
                 .font(.footnote)
                 .foregroundColor(.white)
             
-            Image("dish-fact-2")
+            Image(fact.image)
                 .resizable()
                 .frame(width: 66, height: 66, alignment: .center)
                 .clipShape(Circle())
@@ -52,7 +53,7 @@ struct FactsView: View {
 // MARK: - PREVIEW
 struct FactsView_Previews: PreviewProvider {
     static var previews: some View {
-        FactsView()
+        FactsView(fact: factsData[0])
             .previewLayout(.fixed(width: 400, height: 220))
     }
 }
