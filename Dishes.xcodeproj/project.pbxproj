@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A1D9E31298C028700172C03 /* FactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1D9E30298C028700172C03 /* FactsView.swift */; };
+		2A4EC9FE299417C900E08A3F /* Coolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4EC9FD299417C900E08A3F /* Coolding.swift */; };
 		2A65AA0B2992D76F001FDC1A /* ColdingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A65AA0A2992D76F001FDC1A /* ColdingView.swift */; };
 		2A9BDD11298AA09500070B75 /* HeaderData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BDD10298AA09500070B75 /* HeaderData.swift */; };
 		2A9BDD13298AA36700070B75 /* FoodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9BDD12298AA36700070B75 /* FoodsView.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		2A1D9E30298C028700172C03 /* FactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsView.swift; sourceTree = "<group>"; };
+		2A4EC9FD299417C900E08A3F /* Coolding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coolding.swift; sourceTree = "<group>"; };
 		2A65AA0A2992D76F001FDC1A /* ColdingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdingView.swift; sourceTree = "<group>"; };
 		2A9BDD10298AA09500070B75 /* HeaderData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderData.swift; sourceTree = "<group>"; };
 		2A9BDD12298AA36700070B75 /* FoodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsView.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				2ACAD31D2989704F00C93A53 /* HeaderModel.swift */,
 				2AB1A572298DB8CD006F5323 /* FactModel.swift */,
 				2AE2DA3E298E948800820B8E /* Recipe.swift */,
+				2A4EC9FD299417C900E08A3F /* Coolding.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ABCC71329846FDC006AC20F /* SettingsView.swift in Sources */,
+				2A4EC9FE299417C900E08A3F /* Coolding.swift in Sources */,
 				2AA6B29A299073F300E6678D /* RecipeRatingView.swift in Sources */,
 				2ABCC71129846FC9006AC20F /* ColdingStagesView.swift in Sources */,
 				2A9BDD13298AA36700070B75 /* FoodsView.swift in Sources */,
