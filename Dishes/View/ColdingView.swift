@@ -10,11 +10,12 @@ import SwiftUI
 struct ColdingView: View {
     // MARK: - PROPERTIES
     @State private var slideInAnimation: Bool = false
+    var colding: Colding
     
     // MARK: - BODY
     var body: some View {
         VStack {
-            Image("dish-cooling-1")
+            Image(colding.image)
                 .resizable()
                 .frame(width: 100, height: 100, alignment: .center)
                 .clipShape(Circle())
@@ -35,7 +36,7 @@ struct ColdingView: View {
             VStack(alignment: .center, spacing: 10){
                 // STAGE
                 VStack(alignment: .center, spacing: 0) {
-                    Text("1")
+                    Text(colding.stage)
                         .font(.system(.largeTitle, design: .serif))
                         .fontWeight(.bold)
                     
@@ -48,7 +49,7 @@ struct ColdingView: View {
                 .frame(width: 180)
                 
                 // TITLE
-                Text("Hard")
+                Text(colding.title)
                     .font(.system(.largeTitle, design: .serif))
                     .fontWeight(.bold)
                     .foregroundColor(Color("ColorYellowMedium"))
@@ -63,14 +64,14 @@ struct ColdingView: View {
                 
                 // DESCRIPTION
                 Spacer()
-                Text("This is a dry, short variety of pasta made with durum wheat and water.")
+                Text(colding.description)
                     .foregroundColor(Color("ColorYellowDark"))
                     .fontWeight(.bold)
                     .lineLimit(nil)
                 Spacer()
                 
                 // COOLING
-                Text("5+ DAYS")
+                Text(colding.ripeness.uppercased())
                     .foregroundColor(.white)
                     .font(.system(.callout, design: .serif))
                     .fontWeight(.bold)
@@ -85,7 +86,7 @@ struct ColdingView: View {
                     )
                 
                 // INSTRUCTIONS
-                Text("In northern Italy, it usually refers to an extruded type of pasta with a tubular shape.")
+                Text(colding.instruction)
                     .font(.footnote)
                     .foregroundColor(Color("ColorYellowLight"))
                     .fontWeight(.bold)
@@ -110,6 +111,6 @@ struct ColdingView: View {
 // MARK: - PREVIEW
 struct ColdingView_Previews: PreviewProvider {
     static var previews: some View {
-        ColdingView()
+        ColdingView(colding: coldingData[1])
     }
 }
