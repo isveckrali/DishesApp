@@ -12,22 +12,22 @@ struct AppView: View {
         TabView{
             DishesView()
             .tabItem {
-                Image("tabicon-branch")
+                Image(systemName: "arrow.triangle.branch")
                 Text("Dishes")
             }
             ContentView()
                 .tabItem {
-                    Image("tabicon-book")
+                    Image(systemName: "book")
                     Text("Recipes")
                 }
             ColdingStagesView()
                 .tabItem {
-                    Image("tabicon-dish")
+                    Image(systemName: "heart")
                     Text("Colding")
                 }
             SettingsView()
                 .tabItem {
-                    Image("tabicon-settings")
+                    Image(systemName: "slider.vertical.3")
                     Text("Settings")
                 }
         }

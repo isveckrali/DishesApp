@@ -61,7 +61,7 @@ struct RecipeCardView: View {
         }
         .background(.white)
         .cornerRadius(12)
-        .shadow(color: Color("ColorBlackTransparenLight"), radius: 8, x: 0, y: 0)
+        .shadow(color: Color("ColorBlackTransparentLight"), radius: 8, x: 0, y: 0)
         .onTapGesture {
             self.hapticImpact.impactOccurred()
             self.showModal = true
