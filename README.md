@@ -2,7 +2,7 @@
 
 can be seen how and what to cook through whole steps.
 
-<h2> Used Tech<h2>
+<h2> Used Tech</h2>
 
 SiwftUI & Combine 
 
